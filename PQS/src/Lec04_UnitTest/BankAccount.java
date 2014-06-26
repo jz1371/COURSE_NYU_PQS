@@ -10,13 +10,13 @@ public class BankAccount {
 		balance = accountBalance;
 	}
 	
-	public String getName()	{
-		return userName;
-	}
 	public int getBalance() {
 		return balance;
 	}
 	
+	public String getName()	{
+		return userName;
+	}
 	
 	public void deposit(int deposit) {
 		if (deposit < 0) {
