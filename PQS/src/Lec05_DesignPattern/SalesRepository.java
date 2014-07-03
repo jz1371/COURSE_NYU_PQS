@@ -1,3 +1,8 @@
+/* File: SalesRepository.java
+ * ----------------------------
+ * Design Pattern: iterator.
+ * Last Modified: 06/25/2014
+ */
 package Lec05_DesignPattern;
 import java.util.ArrayList;
 import java.util.Iterator;
