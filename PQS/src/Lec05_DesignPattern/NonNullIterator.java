@@ -6,6 +6,7 @@ import java.util.NoSuchElementException;
 public class NonNullIterator<E> implements Iterator<E> {
 
 	private Iterator<E> iterator;
+	private Criteria<E> criteria;
 	private E nextObject;
 	private boolean hasFound = false;
 
@@ -13,6 +14,12 @@ public class NonNullIterator<E> implements Iterator<E> {
 		this.iterator = iterator;
 	}
 
+	public NonNullIterator (Iterator<E> iterator, Criteria<E> criteria) {
+		this.iterator = iterator;
+		this.criteria  = criteria;
+	}
+
+	
 	@Override
 	public boolean hasNext() {
 		if(hasFound == false){
