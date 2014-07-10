@@ -10,7 +10,6 @@ public class GuessNumApp {
 
        new GuessNumView(model);
        new GuessNumView(model);
-       new GuessNumView(model);
 
        new GuessNumLogger(model);
        model.startGame();

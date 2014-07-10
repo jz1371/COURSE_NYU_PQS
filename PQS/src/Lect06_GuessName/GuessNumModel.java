@@ -14,12 +14,13 @@ public class GuessNumModel {
     private List<GuessNumListener> listeners = 
         new ArrayList<GuessNumListener>();
 
+    public enum CheckStatus {
+        LOW, HIGH, JUST_RIGHT;
+    }
+
     public void startGame() {
         number = new Random().nextInt(100);
         fireGameStartEvent();
-    }
-    public enum CheckStatus {
-        LOW, HIGH, JUST_RIGHT;
     }
 
     public CheckStatus checkGuess(int guess) {
@@ -33,13 +34,12 @@ public class GuessNumModel {
             fireRightEvent(guess);
             return CheckStatus.JUST_RIGHT;
         } 
+    }
 
-    }
-    
     private void fireGameStartEvent() {
-    	for (GuessNumListener listener : listeners) {
-        listener.gameStarted();
-    }
+        for (GuessNumListener listener : listeners) {
+            listener.gameStarted();
+        }
     }
 
     private void fireTooLowEvent(int guess) {
@@ -53,14 +53,12 @@ public class GuessNumModel {
             listener.guessTooHigh(guess);
         }
     }
-    
+
     private void fireRightEvent(int guess) {
         for (GuessNumListener listener : listeners) {
             listener.guessRight(guess);
         }
     }
-
-
 
     public void addGuessNumListener(GuessNumListener listener) {
         listeners.add(listener);
