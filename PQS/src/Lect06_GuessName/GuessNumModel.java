@@ -1,5 +1,9 @@
 /* File: GuessNumModel.java
  * -------------------------
+ * This part serves as "Subject" in Observer Pattern. 
+ * It holds registered observers in a list, can add, 
+ * delete and notify observers. It has some operation
+ * methods as well.
  */
 
 package Lect06_GuessName;
