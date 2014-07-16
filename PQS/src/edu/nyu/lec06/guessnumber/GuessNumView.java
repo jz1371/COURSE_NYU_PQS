@@ -1,10 +1,11 @@
 /* File: GuessNumView.java
  * -----------------------
- * This view implements details of GuessNumListener
- * interface and is responsible for program's UI layout.
+ * This view serves as "Observer" in Observer Pattern, 
+ * which implements details of GuessNumListener interface
+ * and is responsible for program's UI layout.
  */
 
-package Lect06_GuessName;
+package edu.nyu.lec06.guessnumber;
 
 import java.awt.BorderLayout;
 import java.awt.event.ActionEvent;

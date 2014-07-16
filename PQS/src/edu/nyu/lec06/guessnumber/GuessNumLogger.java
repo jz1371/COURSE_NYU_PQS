@@ -1,4 +1,9 @@
-package Lect06_GuessName;
+/* File: GuessNumLogger.java
+ * -----------------------------
+ * This file serves as "Observer" in Observer Pattern, which
+ * implements GuessNumListener interface and display in console.
+ */
+package edu.nyu.lec06.guessnumber;
 
 
 public class GuessNumLogger implements GuessNumListener {
@@ -19,13 +24,11 @@ public class GuessNumLogger implements GuessNumListener {
   public void guessTooLow(int guess) {
     // TODO Auto-generated method stub
     System.out.println("Guess too low " + guess);
-    
   }
   
   @Override
   public void guessRight(int guess) {
     // TODO Auto-generated method stub
-    
     System.out.println("Correct " + guess);
     
   }
