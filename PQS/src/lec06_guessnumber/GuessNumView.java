@@ -5,7 +5,7 @@
  * and is responsible for program's UI layout.
  */
 
-package edu.nyu.lec06.guessnumber;
+package lec06_guessnumber;
 
 import java.awt.BorderLayout;
 import java.awt.event.ActionEvent;

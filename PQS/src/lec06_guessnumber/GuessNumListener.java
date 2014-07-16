@@ -5,7 +5,7 @@
  * are used by GuessNumModel and implemented by GuessNumView
  * and GuessNumLogger. 
  */
-package edu.nyu.lec06.guessnumber;
+package lec06_guessnumber;
 
 public interface GuessNumListener {
   void guessTooHigh(int guess);

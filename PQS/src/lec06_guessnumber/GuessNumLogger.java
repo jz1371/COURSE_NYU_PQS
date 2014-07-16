@@ -3,7 +3,7 @@
  * This file serves as "Observer" in Observer Pattern, which
  * implements GuessNumListener interface and display in console.
  */
-package edu.nyu.lec06.guessnumber;
+package lec06_guessnumber;
 
 
 public class GuessNumLogger implements GuessNumListener {

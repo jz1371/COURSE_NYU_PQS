@@ -6,7 +6,7 @@
  * methods as well.
  */
 
-package edu.nyu.lec06.guessnumber;
+package lec06_guessnumber;
 
 import java.util.ArrayList;
 import java.util.List;
