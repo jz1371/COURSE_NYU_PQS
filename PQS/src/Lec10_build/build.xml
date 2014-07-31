@@ -1,0 +1,40 @@
+<project name="PQS Project">
+	<description>
+		My demo project,
+	</description>
+	<property name="src" location="src"/>
+	<property name="bin" location="bin"/>
+	<!-- - - - - - - - - - - - - - - - - - 
+          target: init                      
+         - - - - - - - - - - - - - - - - - -->
+    <target name="init">
+            <mkdir dir="bin"/>
+            <mkdir dir="dist"/>
+    </target>
+
+	<!-- ================================= 
+          target: clean              
+         ================================= -->
+    <target name="clean" depends="" description="Clean">
+        <delete dir="${bin}"/>
+    	<delete dir="dist"/>
+    </target>
+
+	<!-- ================================= 
+          target: compile              
+         ================================= -->
+    <target name="compile" depends="init" description="Compiles the project.">
+        <javac srcdir="src" destdir="bin"/>
+    </target>
+	
+	
+	<!-- ================================= 
+          target: dist              
+         ================================= -->
+    
+    <target name="jar" depends="clean, compile" description="Create jar Files.">
+    	<jar destfile="dist/HeloProject.jar" basedir="bin"/>
+    </target> 
+
+	
+</project>
